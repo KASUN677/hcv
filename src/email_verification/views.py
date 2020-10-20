@@ -75,7 +75,7 @@ def submit(request):
                 connection_id=connection_id, state="invite-created"
             )
 
-            return HttpResponseRedirect(f"/thanks?email={form.instance.email}")
+            return HttpResponseRedirect(f"{os.environ.get('SITE_URL')}/verify/{connection_id}")
         else:
             return HttpResponseBadRequest()
 
