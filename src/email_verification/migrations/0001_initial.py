@@ -16,6 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('email', models.EmailField(max_length=100)),
+                ('HCN', models.CharField(max_length=100)),
                 ('connection_id', models.UUIDField()),
                 ('invite_url', models.URLField()),
             ],
