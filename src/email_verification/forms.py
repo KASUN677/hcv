@@ -13,4 +13,4 @@ class BaseForm(forms.ModelForm):
 class EmailForm(BaseForm):
     class Meta:
         model = Verification
-        fields = ["email" , "HCN" ]
+        fields = ["email" , "HCN","Version_code", "DOB", "Gender", "Postcal_code", "DIN"  ]

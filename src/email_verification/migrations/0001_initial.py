@@ -17,8 +17,18 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('email', models.EmailField(max_length=100)),
                 ('HCN', models.CharField(max_length=100)),
+                ("Version_code",models.CharField(max_length=2)),
+                ("DOB", models.DateField()),
+                ("Gender", models.CharField(max_length=5)),
+                ("Postcal_code", models.CharField(max_length=7)),
+                ("DIN" ,models.CharField(max_length=11)),
                 ('connection_id', models.UUIDField()),
                 ('invite_url', models.URLField()),
             ],
         ),
     ]
+
+    
+    
+
+    
