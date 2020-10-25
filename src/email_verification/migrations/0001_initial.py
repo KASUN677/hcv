@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ("Version_code",models.CharField(max_length=2)),
                 ("DOB", models.DateField()),
                 ("Gender", models.CharField(max_length=5)),
-                ("Postcal_code", models.CharField(max_length=7)),
+                ("Postal_code", models.CharField(max_length=7)),
                 ("DIN" ,models.CharField(max_length=11)),
                 ('connection_id', models.UUIDField()),
                 ('invite_url', models.URLField()),

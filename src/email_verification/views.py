@@ -179,6 +179,36 @@ def webhooks(request, topic):
                         "mime-type": "text/plain",
                     },
                     {
+                         "name": "hcn",
+                         "value": verification.HCN,
+                         "mime-type": "text/plain",
+                    },
+                    {
+                         "name": "vc",
+                         "value": verification.Version_code,
+                         "mime-type": "text/plain",
+                    },
+                     {
+                         "name": "dob",
+                         "value": str(verification.DOB),
+                         "mime-type": "text/plain",
+                     },
+                     {
+                         "name": "gender",
+                         "value": verification.Gender,
+                         "mime-type": "text/plain",
+                     }, 
+                        {
+                         "name": "postal_code",
+                         "value": verification.Postal_code,
+                         "mime-type": "text/plain",
+                     },
+                     {
+                         "name": "din",
+                         "value": verification.DIN,
+                         "mime-type": "text/plain",
+                     },                   
+                    {
                         "name": "time",
                         "value": str(datetime.utcnow()),
                         "mime-type": "text/plain",
